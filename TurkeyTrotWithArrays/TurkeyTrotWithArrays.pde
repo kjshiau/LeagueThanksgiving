@@ -30,8 +30,9 @@ void setup() {
 
 void draw() {
   
+ // Draw the background (farmyard)
+  
  if (!gameOver) {
-    // Draw the background (farmyard)
  
     drawLaneMarkers();   // This method draws the lines between each racing lane
     drawTurkeys();       // This method draws each turkey
