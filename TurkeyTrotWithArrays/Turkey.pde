@@ -17,8 +17,8 @@ public Turkey(int x, int y) {
 public Turkey(int x, int y, String turkeyImage) {
   this.x = x;
   this.y = y;
-  turkey.resize(size,size);
   this.turkey = loadImage(turkeyImage);
+  turkey.resize(size,size);
 }
 
 public void draw() {
