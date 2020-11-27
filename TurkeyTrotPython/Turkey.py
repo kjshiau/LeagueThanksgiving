@@ -8,7 +8,7 @@ class Turkey:
     image_width = 150
     image_height = 109
 
-    def __init__(self, x, y, filename='turkey.gif'):
+    def __init__(self, x, y, name='', filename='turkey.gif'):
         self.x = x;
         self.y = y - (Turkey.image_height / 4)
         self.size = 100;
@@ -16,7 +16,7 @@ class Turkey:
         self.maxSpeed = 15;
         self.image = Image.open(filename)
 
-        self.image
+        self.turkey_name = name
 
         if Turkey.window is not None:
             Turkey.window.addshape(filename)
@@ -40,5 +40,5 @@ class Turkey:
         self.turtleObject.hideturtle()
         self.turtleObject.backward(450)
         self.turtleObject.showturtle()
-        self.turtleObject.write(arg="Winner!!!", move=True, align='left', font=('Arial', 24, 'normal'))
+        self.turtleObject.write(arg=self.turkey_name + " is the Winner!!!", move=True, align='left', font=('Arial', 24, 'normal'))
         print( "Winner" )
