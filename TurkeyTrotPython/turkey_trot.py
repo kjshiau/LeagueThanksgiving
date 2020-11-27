@@ -22,9 +22,9 @@ def draw_lane_markers(num_turkeys):
     lane_maker.speed(0)
     lane_maker.fillcolor('black')
 
-    for i in range(number_of_turkeys):
+    for i in range(num_turkeys):
         start_height = -(HEIGHT / 2)
-        height = start_height + (i * (HEIGHT / number_of_turkeys))
+        height = start_height + (i * (HEIGHT / num_turkeys))
         lane_maker.goto(-(WIDTH / 2), height)
         lane_maker.setheading(0)
         lane_maker.begin_fill()
